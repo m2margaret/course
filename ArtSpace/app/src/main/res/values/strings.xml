@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ArtSpace</string>
+
+    <string name="name1">Девятый Вал\nИван Айвазовский(1850)</string>
+    <string name="name2">Чесменское Сражение\nИван Айвазовский(1848)</string>
+    <string name="name3">Неаполитанский Залив\nИван Айвазовский(1841)</string>
+
+    <string name="prevButton">Предыдущая</string>
+    <string name="nextButton">Следующая</string>
+
+</resources>

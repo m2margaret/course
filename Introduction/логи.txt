@@ -1,0 +1,63 @@
+проверьте, что методы вызываются в нужной последовательности, просмотрите логи:
+2024-06-27 02:21:21.005 26298-26309 System                  com.example.happybirthday            W  A resource failed to call close. 
+2024-06-27 02:21:21.957 26298-26298 GraphicsEnvironment     com.example.happybirthday            V  ANGLE Developer option for 'com.example.happybirthday' set to: 'default'
+2024-06-27 02:21:21.959 26298-26298 GraphicsEnvironment     com.example.happybirthday            V  Neither updatable production driver nor prerelease driver is supported.
+2024-06-27 02:21:21.987 26298-26298 NetworkSecurityConfig   com.example.happybirthday            D  No Network Security Config specified, using platform default
+2024-06-27 02:21:21.997 26298-26298 NetworkSecurityConfig   com.example.happybirthday            D  No Network Security Config specified, using platform default
+2024-06-27 02:21:22.223 26298-26298 lifeСycle               com.example.happybirthday            D  onCreate was called
+2024-06-27 02:21:22.270 26298-26317 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libEGL_emulation.so
+2024-06-27 02:21:22.282 26298-26317 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+2024-06-27 02:21:22.299 26298-26317 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libGLESv2_emulation.so
+2024-06-27 02:21:22.469 26298-26298 lifeСycle               com.example.happybirthday            D  onStart was called
+2024-06-27 02:21:22.472 26298-26298 lifeСycle               com.example.happybirthday            D  onResume was called
+2024-06-27 02:21:23.020 26298-26298 e.happybirthda          com.example.happybirthday            W  Class androidx.compose.runtime.snapshots.SnapshotStateMap failed lock verification and will run slower.
+                                                                                                    Common causes for lock verification issues are non-optimized dex code
+                                                                                                    and incorrect proguard optimizations.
+2024-06-27 02:21:23.570 26298-26315 HostConnection          com.example.happybirthday            D  createUnique: call
+2024-06-27 02:21:23.578 26298-26315 HostConnection          com.example.happybirthday            D  HostConnection::get() New Host Connection established 0x7e082fe11010, tid 26315
+2024-06-27 02:21:23.772 26298-26315 HostConnection          com.example.happybirthday            D  HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+2024-06-27 02:21:23.849 26298-26315 OpenGLRenderer          com.example.happybirthday            W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2024-06-27 02:21:23.849 26298-26315 OpenGLRenderer          com.example.happybirthday            W  Failed to initialize 101010-2 format, error = EGL_SUCCESS
+2024-06-27 02:21:23.876 26298-26315 EGL_emulation           com.example.happybirthday            D  eglCreateContext: 0x7e082fe0ff90: maj 3 min 0 rcv 3
+2024-06-27 02:21:23.926 26298-26315 EGL_emulation           com.example.happybirthday            D  eglMakeCurrent: 0x7e082fe0ff90: ver 3 0 (tinfo 0x7e0a52626080) (first time)
+2024-06-27 02:21:23.998 26298-26315 Gralloc4                com.example.happybirthday            I  mapper 4.x is not supported
+2024-06-27 02:21:24.013 26298-26315 HostConnection          com.example.happybirthday            D  createUnique: call
+2024-06-27 02:21:24.015 26298-26315 HostConnection          com.example.happybirthday            D  HostConnection::get() New Host Connection established 0x7e082fe104d0, tid 26315
+2024-06-27 02:21:24.016 26298-26315 goldfish-address-space  com.example.happybirthday            D  allocate: Ask for block of size 0x100
+2024-06-27 02:21:24.018 26298-26315 goldfish-address-space  com.example.happybirthday            D  allocate: ioctl allocate returned offset 0x3e7ffe000 size 0x2000
+2024-06-27 02:21:24.038 26298-26315 Gralloc4                com.example.happybirthday            W  allocator 4.x is not supported
+2024-06-27 02:21:24.384 26298-26315 HostConnection          com.example.happybirthday            D  HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+2024-06-27 02:21:24.735 26298-26312 OpenGLRenderer          com.example.happybirthday            I  Davey! duration=2635ms; Flags=1, FrameTimelineVsyncId=51401, IntendedVsync=24965969192584, Vsync=24966452525898, InputEventId=0, HandleInputStart=24966463614400, AnimationStart=24966463635100, PerformTraversalsStart=24966464338400, DrawStart=24968279478700, FrameDeadline=24965985859250, FrameInterval=24966463579000, FrameStartTime=16666666, SyncQueued=24968298378100, SyncStart=24968300466800, IssueDrawCommandsStart=24968304658100, SwapBuffers=24968601223700, FrameCompleted=24968606939600, DequeueBufferDuration=239200, QueueBufferDuration=1498500, GpuCompleted=24968605871400, SwapBuffersCompleted=24968606939600, DisplayPresentTime=0, 
+2024-06-27 02:21:24.844 26298-26298 Choreographer           com.example.happybirthday            I  Skipped 124 frames!  The application may be doing too much work on its main thread.
+2024-06-27 02:21:24.886 26298-26311 OpenGLRenderer          com.example.happybirthday            I  Davey! duration=2110ms; Flags=0, FrameTimelineVsyncId=51409, IntendedVsync=24966652525890, Vsync=24968719192474, InputEventId=0, HandleInputStart=24968736118500, AnimationStart=24968736141200, PerformTraversalsStart=24968757505700, DrawStart=24968757690600, FrameDeadline=24966685859222, FrameInterval=24968735084800, FrameStartTime=16666666, SyncQueued=24968760371700, SyncStart=24968760734100, IssueDrawCommandsStart=24968760799300, SwapBuffers=24968761471700, FrameCompleted=24968763885800, DequeueBufferDuration=26700, QueueBufferDuration=1678600, GpuCompleted=24968763752900, SwapBuffersCompleted=24968763885800, DisplayPresentTime=0, 
+2024-06-27 02:21:25.904 26298-26315 EGL_emulation           com.example.happybirthday            D  app_time_stats: avg=594.36ms min=156.88ms max=1031.84ms count=2
+2024-06-27 02:21:28.204 26298-26324 ProfileInstaller        com.example.happybirthday            D  Installing profile for com.example.happybirthday
+
+осуществите поворот экрана, просмотрите логи:
+2024-06-27 02:22:39.322 26298-26298 lifeСycle               com.example.happybirthday            D  onPause was called
+2024-06-27 02:22:39.327 26298-26298 lifeСycle               com.example.happybirthday            D  onStop was called
+2024-06-27 02:22:39.334 26298-26298 lifeСycle               com.example.happybirthday            D  onDestroy was called
+2024-06-27 02:22:39.463 26298-26298 lifeСycle               com.example.happybirthday            D  onCreate was called
+2024-06-27 02:22:39.474 26298-26298 lifeСycle               com.example.happybirthday            D  onStart was called
+2024-06-27 02:22:39.475 26298-26298 lifeСycle               com.example.happybirthday            D  onResume was called
+2024-06-27 02:22:40.540 26298-26298 Choreographer           com.example.happybirthday            I  Skipped 48 frames!  The application may be doing too much work on its main thread.
+Вывод: Activity сначала теряет фокус работы, становится невидимой для пользователя, потом уничножается, снова создаётся в другой ориентации, становится видимо йдля пользователя, готово к работе
+
+Сверните приложение, просмотрите логи:
+2024-06-27 02:24:58.003 26298-26298 lifeСycle               com.example.happybirthday            D  onPause was called
+2024-06-27 02:24:58.496 26298-26298 lifeСycle               com.example.happybirthday            D  onStop was called
+Вывод: Activity перестаёт быть работоспособной и становится невидимой для пользователя, но полностью не уничножается
+
+Напишите в методе onCreate() вызов метода finish(), просмотрите логи:
+2024-06-27 02:27:06.718 26612-26612 GraphicsEnvironment     com.example.happybirthday            V  ANGLE Developer option for 'com.example.happybirthday' set to: 'default'
+2024-06-27 02:27:06.719 26612-26612 GraphicsEnvironment     com.example.happybirthday            V  Neither updatable production driver nor prerelease driver is supported.
+2024-06-27 02:27:06.725 26612-26612 NetworkSecurityConfig   com.example.happybirthday            D  No Network Security Config specified, using platform default
+2024-06-27 02:27:06.725 26612-26612 NetworkSecurityConfig   com.example.happybirthday            D  No Network Security Config specified, using platform default
+2024-06-27 02:27:06.838 26612-26632 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libEGL_emulation.so
+2024-06-27 02:27:06.842 26612-26632 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+2024-06-27 02:27:06.847 26612-26632 libEGL                  com.example.happybirthday            D  loaded /vendor/lib64/egl/libGLESv2_emulation.so
+2024-06-27 02:27:06.890 26612-26612 lifeСycle               com.example.happybirthday            D  onCreate was called
+2024-06-27 02:27:07.617 26612-26612 lifeСycle               com.example.happybirthday            D  onDestroy was called
+2024-06-27 02:27:08.272 26612-26624 System                  com.example.happybirthday            W  A resource failed to call close. 
+2024-06-27 02:27:12.960 26612-26636 ProfileInstaller        com.example.happybirthday            D  Installing profile for com.example.happybirthday
+Вывод: Activity создаётся и сразу уничтожается
